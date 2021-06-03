@@ -1,0 +1,50 @@
+.gameBlock{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.targetBlock{
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+    border-radius: 5px;
+}
+.targetContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+    width: 90px;
+    height: 90px;
+    border-radius: 2px;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.scoreDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
