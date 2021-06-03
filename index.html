@@ -1,13 +1,24 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>Color Tile Game</title>
     <link href='style.css' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
-<body style='background-color: black;overscroll-behavior: contain;'>
+<body style='background-color: black;overscroll-behavior: contain;font-family: ubuntu;padding: 20px;'>
     <center>
+        <h1 style="color:white;">Color Tiles!</h1>
+        <p id="gameRules" style="color:white;margin: 20px;"></p>
+        <br>
+        <div id="difficultySwitcher" style="color:white;"></div>
+        <br><br>
         <div class='targetContainer' style='background-color: black;' id="targetContainer"></div>
         <br><br>
         <div class='container' style='background-color: grey;' id="container"></div>
@@ -20,13 +31,19 @@
             <div>
                 <h3>Total Time</h3>
                 <h2>
-                    <span class="time" id="display">00:00:00</span>
+                    <span class="time" id="display">00:00</span>
                 </h2>
             </div>
         </div>
+        <br><br>
+        <button class="button" onClick="resetGame()">Reset</button>
+        <br><br>
     </center>
 
     </div>
+    <script src="directionDetector.js"></script>
+    <script src="renderer.js"></script>
+    <script src="stopwatch.js"></script>
     <script src="index.js"></script>
 </body>
 
