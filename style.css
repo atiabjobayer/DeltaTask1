@@ -43,6 +43,7 @@
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .scoreDiv{
@@ -50,4 +51,29 @@
     flex-direction: row;
     justify-content: space-around;
     color: white;
+}
+
+.nameField {
+    /* width: 300px; */
+    border-radius: 15px;
+    border: 1px;
+    border: white solid;
+    background-color:black;
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+}
+
+.initiallyHidden {
+    visibility: hidden;
+}
+
+body{
+    color: white;
+}
+
+.scoreblock{
+    border: 1px solid;
+    border:white solid;
+    border-radius: 10px;
 }

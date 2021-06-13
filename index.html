@@ -17,27 +17,51 @@
         <h1 style="color:white;">Color Tiles!</h1>
         <p id="gameRules" style="color:white;margin: 20px;"></p>
         <br>
+
+
         <div id="difficultySwitcher" style="color:white;"></div>
         <br><br>
-        <div class='targetContainer' style='background-color: black;' id="targetContainer"></div>
-        <br><br>
-        <div class='container' style='background-color: grey;' id="container"></div>
-        <br><br>
-        <div class="scoreDiv">
-            <div>
-                <h3>Total Move</h3>
-                <h2 id="moveCounter">0</h2>
-            </div>
-            <div>
-                <h3>Total Time</h3>
-                <h2>
-                    <span class="time" id="display">00:00</span>
-                </h2>
-            </div>
+
+
+        <div id="nameInputBlock">
+            <input type="text" class="nameField" placeholder="Enter Your Name" id="player_name">
+            <br><br>
+            <button class="button" id="nameButton">Start</button>
         </div>
-        <br><br>
-        <button class="button" onClick="resetGame()">Reset</button>
-        <br><br>
+
+
+        <div id="showNameBlock" class="initiallyHidden"></div>
+        <br><br><br><br>
+
+        <div id="gameBlock">
+            <div class='targetContainer' style='background-color: black;' id="targetContainer"></div>
+            <br><br>
+
+
+            <div class='container initiallyHidden' style='background-color: grey;' id="container"></div>
+            <br><br>
+
+
+            <div class="scoreDiv initiallyHidden">
+                <div>
+                    <h3>Total Move</h3>
+                    <h2 id="moveCounter">0</h2>
+                </div>
+                <div>
+                    <h3>Total Time</h3>
+                    <h2>
+                        <span class="time" id="display">00:00</span>
+                    </h2>
+                </div>
+            </div>
+            <br><br>
+            <button class="button initiallyHidden" onClick="resetGame()">Reset</button>
+            <br><br>
+        </div>
+
+        <div id="scoreblock" class='scoreblock initiallyHidden'>
+
+        </div>
     </center>
 
     </div>

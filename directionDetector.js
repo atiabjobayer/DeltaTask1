@@ -76,23 +76,25 @@ document.onkeydown = function (e) {
             // console.log("Upre");
             // console.log(blankBlockRow + 1);
             moveUp();
+            render();
             break;
         case 'ArrowDown':
             // console.log("Niche");
             // console.log(blankBlockRow - 1);
             moveDown();
+            render();
             break;
         case 'ArrowLeft':
             // console.log("Baame");
             // console.log(blankBlockCol + 1);
             moveLeft();
+            render();
             break;
         case 'ArrowRight':
             // console.log("Daane");
             // console.log(blankBlockCol - 1);
             moveRight();
+            render();
 
     }
-
-    render();
 };
